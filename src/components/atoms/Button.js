@@ -2,7 +2,9 @@ import React from 'react'
 
 const Button = ({type, text, onClick, size, ...props}) => {
 
-    let typeInterno, sizeInterno    
+    let typeInterno, sizeInterno   
+    
+    let levelActiveBGColor = 600
 
 
     let estiloBotonBasico = `
@@ -19,19 +21,19 @@ const Button = ({type, text, onClick, size, ...props}) => {
 
      //Types de boton
     if (type === "primary") {
-        typeInterno = "bg-blue-500 active:bg-blue-700 text-white"
+        typeInterno = `bg-blue-500 active:bg-blue-${levelActiveBGColor} text-white`
     } 
     if (type === "secondary"){
-        typeInterno = "bg-white hover:bg-gray-500 hover:text-gray-50 border-solid border border-black text-black"
+        typeInterno = `bg-white text-black active:bg-gray-${levelActiveBGColor} active:text-white border-solid border border-black `
     }
     if (type === "warning") {
-        typeInterno = "bg-yellow-500 hover:bg-yellow-700 text-white"
+        typeInterno = `bg-yellow-500 active:bg-yellow-${levelActiveBGColor} text-white`
     }
     if (type === "alert") {
-        typeInterno = "bg-red-500 hover:bg-red-700 text-white"
+        typeInterno = `bg-red-500 active:bg-red-${levelActiveBGColor} text-white`
     }
     if (type === "success") {
-        typeInterno = "bg-green-500 hover:bg-green-700 text-white"
+        typeInterno = `bg-green-500 active:bg-green-${levelActiveBGColor} text-white`
     }
 
     //Tamaños de boton

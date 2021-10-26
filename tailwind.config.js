@@ -10,7 +10,8 @@ module.exports = {
       scale: ['active'],
       width: ['group-hover'],
       height: ['group-hover'],
-      boxShadow: ['active']
+      boxShadow: ['active'],
+      textColor: ['active'],
     }
   },
   plugins: [],
