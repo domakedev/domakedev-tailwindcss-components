@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Button = ({type, children, onClick, size, ...props}) => {
+const  Button = ({type, children, onClick, size, ...props}) => {
 
     let typeInterno, sizeInterno   
     
-    let levelActiveBGColor = 600
-
 
      let estiloBotonBasico = `
      rounded 
@@ -26,32 +24,33 @@ const Button = ({type, children, onClick, size, ...props}) => {
     if (type === "primary") {
         typeInterno = `
         bg-blue-500 
-        active:bg-blue-${levelActiveBGColor} 
+        active:bg-blue-600 
         text-white`
     } 
     if (type === "secondary"){
         typeInterno = `
         bg-white 
         text-black 
-        active:bg-gray-${levelActiveBGColor} active:text-white 
+        active:bg-gray-600
+        active:text-white 
         border-solid border border-black `
     }
     if (type === "warning") {
         typeInterno = `
         bg-yellow-500 
-        active:bg-yellow-${levelActiveBGColor} 
+        active:bg-yellow-600 
         text-white`
     }
     if (type === "alert") {
         typeInterno = `
         bg-red-500 
-        active:bg-red-${levelActiveBGColor} 
+        active:bg-red-600 
         text-white`
     }
     if (type === "success") {
         typeInterno = `
         bg-green-500 
-        active:bg-green-${levelActiveBGColor} 
+        active:bg-green-600 
         text-white`
     }
 
@@ -69,7 +68,7 @@ const Button = ({type, children, onClick, size, ...props}) => {
         >
             <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-48 group-hover:h-48 opacity-10"></span>
             <span className="relative">{children}</span>  
-                      
+
         </button>
     )
 }
