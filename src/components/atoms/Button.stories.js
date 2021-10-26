@@ -22,3 +22,9 @@ Secondary.args = {
     type: "secondary",
     text: "Boton secundario",
 }
+
+export const Warning = Template.bind({})
+Warning.args = {
+    type: "warning",
+    text: "Boton Warning",
+}
