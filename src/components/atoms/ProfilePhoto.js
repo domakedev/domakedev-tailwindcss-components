@@ -4,6 +4,10 @@ import Photo from "./Naruto.png"
 
 const ProfilePhoto = ({type, size, ProfilePhotoSrc, ...props}) => {
 
+    //La imagen ProfilePhotoSrc, tiene que ser cuadrada y si viene de un link externo,
+    //Tiene que ser publica como de: https://unsplash.com/
+
+
     let typeInterno, sizeInterno
 
     let defaultStyles = `

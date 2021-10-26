@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="">
       <Tittle>Botones</Tittle>
-      <Paragraph>Botones bien chidos!</Paragraph>
       <Button type="primary" size="big">
         Primary
       </Button>
@@ -40,13 +39,10 @@ function App() {
       </div>
 
       <Tittle>Foto de perfil</Tittle>
-      <Paragraph>
-        La imagen que ves es solo por defecto, hay mas configuraciones.
-      </Paragraph>
       <div className="flex justify-center items-center">
       <ProfilePhoto type="circular" size="small" ></ProfilePhoto>
       <ProfilePhoto type="circular" size="medium" ></ProfilePhoto>
-      <ProfilePhoto type="circular" size="big" ></ProfilePhoto>
+      <ProfilePhoto type="circular" size="big" ProfilePhotoSrc="https://images.unsplash.com/photo-1610268274009-ace24d01a05b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=922&q=80"></ProfilePhoto>
       <ProfilePhoto type="cuadrado" size="small" ></ProfilePhoto>
       <ProfilePhoto type="cuadrado" size="medium" ></ProfilePhoto>
       <ProfilePhoto type="cuadrado" size="big" ></ProfilePhoto>
