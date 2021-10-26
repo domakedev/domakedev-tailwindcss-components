@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       backgroundColor: ['active'],
       scale: ['active'],
-    },
+      width: ['group-hover'],
+      height: ['group-hover'],
+      boxShadow: ['active']
+    }
   },
   plugins: [],
 }

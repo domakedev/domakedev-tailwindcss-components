@@ -28,3 +28,13 @@ Warning.args = {
     type: "warning",
     text: "Boton Warning",
 }
+export const Alert = Template.bind({})
+Alert.args = {
+    type: "alert",
+    text: "Boton Alert",
+}
+export const Success = Template.bind({})
+Success.args = {
+    type: "success",
+    text: "Boton Success",
+}
