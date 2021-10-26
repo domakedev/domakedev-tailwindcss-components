@@ -5,6 +5,7 @@ import LogoImg from './googlelogo.jpg'
 const Logo = ({size, logo, ...props}) => {
 
     let defaultStyles = `
+    inline-block
     `
 
     let sizeInterno

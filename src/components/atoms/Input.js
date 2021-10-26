@@ -2,10 +2,10 @@ import React from 'react'
 
 const Input = ({placeholder, type, name, id}) => {
 
-    const defaultStyles = `
-        w-4/5
+    const defaultStyles = `        
         py-2
         px-4
+        mx-8
         placeholder-gray-400
         border border-gray-600 rounded
         focus:outline-none focus:ring-1 focus:ring-gray-600

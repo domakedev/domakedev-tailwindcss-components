@@ -7,7 +7,8 @@ const ProfilePhoto = ({type, size, ProfilePhotoSrc, ...props}) => {
     let typeInterno, sizeInterno
 
     let defaultStyles = `
-    border-solid border-4 border-gray-200`
+    border-solid border-4 border-gray-200
+    inline-block`
 
     //Tipo de imagen: circular o cuadrada
     if (type === "circular") {
