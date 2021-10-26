@@ -12,6 +12,8 @@ module.exports = {
       height: ['group-hover'],
       boxShadow: ['active'],
       textColor: ['active'],
+      borderColor: ['active','focus'],
+      ringColor: ['focus']
     }
   },
   plugins: [],
