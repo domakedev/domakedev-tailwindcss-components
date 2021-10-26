@@ -22,7 +22,7 @@ Iniciara el servidor de desarrollo para storybook y podras navegar visualmente e
 
 Te creara una carpeta la cual puedes abrir como cualquier pagina web y ver los componentes de storybook. Y subirla a un hosting para mostrarlos si asi lo deseas.
 
-### `npm run eject`
+
 
 **Nota: Usando React + Tailwindcss + Storybook**
 
