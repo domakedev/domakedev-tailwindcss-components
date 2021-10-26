@@ -1,17 +1,27 @@
-import './App.css';
+import "./App.css";
 
-import Button from './components/atoms/Button';
+import Button from "./components/atoms/Button";
 
 function App() {
   return (
-   
-    <div className="bg-red-500 text-red-100	">Hola
-    
-      <Button type="secondary" size="big" text="Botoncitoa primario"></Button>
+    <div className="">
+      <h1>Botones</h1>
+      <Button type="primary" size="big">
+        Primary
+      </Button>
 
+      <Button type="secondary" size="big" te>
+        Secondary
+      </Button>
+
+      <Button type="alert" size="big">
+        Alert
+      </Button>
+
+      <Button type="warning" size="big">
+        Warning
+      </Button>
     </div>
-
-
   );
 }
 

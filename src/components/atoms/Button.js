@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({type, text, onClick, size, ...props}) => {
+const Button = ({type, children, onClick, size, ...props}) => {
 
     let typeInterno, sizeInterno   
     
@@ -17,7 +17,9 @@ const Button = ({type, text, onClick, size, ...props}) => {
      active:shadow-none 
      shadow-lg 
      transition duration-300 ease-in-out transform 
-     active:scale-95`
+     active:scale-95
+     overflow-hidden
+     `
 
 
      //Types de boton
@@ -66,7 +68,8 @@ const Button = ({type, text, onClick, size, ...props}) => {
             {...props}
         >
             <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-48 group-hover:h-48 opacity-10"></span>
-            <span className="relative">{text}</span>            
+            <span className="relative">{children}</span>  
+                      
         </button>
     )
 }

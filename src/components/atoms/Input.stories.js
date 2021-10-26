@@ -12,4 +12,7 @@ const Template = (args) => <Input {...args} />;
 export const Principal = Template.bind({})
 Principal.args = {
     placeholder: "Principal",
+    type:"text", 
+    name:"name", 
+    id:"name"
 }
