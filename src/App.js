@@ -10,7 +10,7 @@ function App() {
         Primary
       </Button>
 
-      <Button type="secondary" size="big" te>
+      <Button type="secondary" size="big">
         Secondary
       </Button>
 
