@@ -7,16 +7,18 @@ const  Button = ({type, children, onClick, size, ...props}) => {
 
      let estiloBotonBasico = `
      rounded 
+     w-max	
      relative 
      inline-flex group items-center justify-center 
      px-3.5 py-2 
-     m-1 
      cursor-pointer 
      active:shadow-none 
      shadow-lg 
      transition duration-300 ease-in-out transform 
      active:scale-95
      overflow-hidden
+     font-Primary
+
      `
 
 
@@ -56,9 +58,9 @@ const  Button = ({type, children, onClick, size, ...props}) => {
 
     //Tamaños de boton
     if (size === "small") {
-        sizeInterno = "text-xs"
+        sizeInterno = "text-xs h-8"
     } else if (size === "big"){
-        sizeInterno = "text-xl"
+        sizeInterno = "text-xl h-12"
     }
 
     return (

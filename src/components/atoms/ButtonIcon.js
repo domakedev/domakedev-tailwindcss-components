@@ -9,7 +9,7 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
      relative 
      rounded
      inline-flex group items-center justify-center 
-     px-3.5 py-2 
+     px-3.5 
      mx-1 
      cursor-pointer 
      active:shadow-none 
@@ -20,15 +20,16 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
      bg-white 
     text-black 
     font-Primary
+    
      `;
 
   
   //Tamaños de boton
   if (size === "small") {
-    sizeInterno = "text-xs";
+    sizeInterno = "text-xs h-8";
     iconStyle = "w-4 h-4"
   } else if (size === "big") {
-    sizeInterno = "text-xl";
+    sizeInterno = "text-xl h-12";
     iconStyle = "w-7 h-7"
 
   }
@@ -41,6 +42,7 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
       
       
       <img src={icon} className={`${iconStyle}`} alt="" />
+      
 
       <span className={`relative ${children?"ml-2":""}`}>{children}</span>
     </button>

@@ -17,7 +17,9 @@ module.exports = {
       boxShadow: ['active'],
       textColor: ['active'],
       borderColor: ['active','focus'],
-      ringColor: ['focus']
+      ringColor: ['focus'],
+      borderStyle: ['hover', 'focus','active'],
+      borderWidth: ['hover', 'focus','active','visited','focus-within'],
     }
   },
   plugins: [],

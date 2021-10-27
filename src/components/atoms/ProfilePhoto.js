@@ -2,7 +2,7 @@ import React from 'react'
 
 import Photo from "./Naruto.png"
 
-const ProfilePhoto = ({type, size, ProfilePhotoSrc, ...props}) => {
+const ProfilePhoto = ({borderColor, type, size, ProfilePhotoSrc, ...props}) => {
 
     //La imagen ProfilePhotoSrc, tiene que ser cuadrada y si viene de un link externo,
     //Tiene que ser publica como de: https://unsplash.com/
@@ -10,8 +10,10 @@ const ProfilePhoto = ({type, size, ProfilePhotoSrc, ...props}) => {
 
     let typeInterno, sizeInterno
 
+
+
     let defaultStyles = `
-    border-solid border-4 border-gray-200
+    border-solid border-4 ${borderColor}
     inline-block`
 
     //Tipo de imagen: circular o cuadrada
@@ -62,5 +64,6 @@ export default ProfilePhoto
 ProfilePhoto.defaultProps = {
     ProfilePhotoSrc: Photo,
     type: "circular",
-    size: "medium"
+    size: "medium",
+    borderColor: "border-gray-200"
   };
