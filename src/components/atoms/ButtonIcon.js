@@ -20,7 +20,7 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
      bg-white 
     text-black 
     font-Primary
-    
+    select-none
      `;
 
   

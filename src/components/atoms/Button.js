@@ -18,6 +18,7 @@ const  Button = ({type, children, onClick, size, ...props}) => {
      active:scale-95
      overflow-hidden
      font-Primary
+     select-none
 
      `
 
