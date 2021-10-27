@@ -6,6 +6,12 @@ import Paragraph from "./components/atoms/Paragraph";
 import Input from "./components/atoms/Input";
 import Logo from "./components/atoms/Logo";
 import ProfilePhoto from "./components/atoms/ProfilePhoto";
+import ButtonIcon from "./components/atoms/ButtonIcon";
+import CardIcon from "./components/atoms/address-card-solid.svg";
+
+
+import {BeakerIcon } from '@heroicons/react/solid'
+
 
 function App() {
   return (
@@ -27,6 +33,10 @@ function App() {
         Warning
       </Button>
 
+      <ButtonIcon size="small">BotonIcon</ButtonIcon>
+
+      <ButtonIcon size="big" icon={CardIcon}>Datos Personales</ButtonIcon>
+
       <Tittle>Input</Tittle>
       <Input placeholder="Aqui un textin"></Input>
 
@@ -47,6 +57,9 @@ function App() {
       <ProfilePhoto type="cuadrado" size="medium" ></ProfilePhoto>
       <ProfilePhoto type="cuadrado" size="big" ></ProfilePhoto>
       </div>
+      
+    
+
 
     </div>
   );
