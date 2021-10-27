@@ -7,9 +7,10 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
 
   let estiloBotonBasico = ` 
      relative 
+     rounded
      inline-flex group items-center justify-center 
      px-3.5 py-2 
-     m-1 
+     mx-1 
      cursor-pointer 
      active:shadow-none 
      shadow-lg 
@@ -41,7 +42,7 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
       
       <img src={icon} className={`${iconStyle}`} alt="" />
 
-      <span className="relative ml-2">{children}</span>
+      <span className={`relative ${children?"ml-2":""}`}>{children}</span>
     </button>
   );
 };

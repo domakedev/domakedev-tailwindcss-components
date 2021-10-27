@@ -7,7 +7,11 @@ import Input from "./components/atoms/Input";
 import Logo from "./components/atoms/Logo";
 import ProfilePhoto from "./components/atoms/ProfilePhoto";
 import ButtonIcon from "./components/atoms/ButtonIcon";
+
+//Iconos
 import CardIcon from "./components/atoms/address-card-solid.svg";
+import Lupa from "./components/atoms/lupa.svg";
+import FacebookIcon from "./components/atoms/facebook-square.svg";
 
 
 function App() {
@@ -34,8 +38,12 @@ function App() {
 
       <ButtonIcon size="big" icon={CardIcon}>Datos Personales</ButtonIcon>
 
+      <ButtonIcon size="big" icon={CardIcon}>Datos</ButtonIcon>
+
       <Tittle>Input</Tittle>
-      <Input placeholder="Aqui un textin"></Input>
+      <Input placeholder="Aqui un textin" icon={FacebookIcon}></Input>
+      <Input placeholder="Aqui un textin" icon={Lupa}></Input>
+      <Input placeholder="Aqui un texto"></Input>
 
       <Tittle>Logo</Tittle>
       <Paragraph>

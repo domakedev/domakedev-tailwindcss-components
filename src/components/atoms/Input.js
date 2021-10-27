@@ -1,28 +1,43 @@
-import React from 'react'
+import React from "react";
 
-const Input = ({placeholder, type, name, id}) => {
+//import IconEjemplo from "./address-card-solid.svg";
 
-    const defaultStyles = `        
+const Input = ({ icon, placeholder, type, name, id }) => {
+  const defaultStyles = `        
         py-2
-        px-4
+        ${icon ? "pl-12" : "px-4"}
         mx-8
         placeholder-gray-400
         border border-gray-600 rounded
         focus:outline-none focus:ring-1 focus:ring-gray-600
-        focus:bg-gray-100
-        `
+        `;
 
-    return (
-        <input
-            className={defaultStyles}
-            placeholder={placeholder}
-            type={type}
-            name={name}
-            id={id}
-        >
-            
-        </input>
-    )
-}
+  let InputStyled = {};
 
-export default Input
+
+  if (icon) {
+    InputStyled = {
+      backgroundImage: `url(${icon})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "0.5rem center",
+      backgroundSize: "30px 30px",
+    };
+  }
+
+  return (
+    <input
+      className={`${defaultStyles}`}
+      placeholder={placeholder}
+      type={type}
+      name={name}
+      id={id}
+      style={InputStyled}
+    ></input>
+  );
+};
+
+export default Input;
+
+Input.defaultProps = {
+  // icon: IconEjemplo
+};
