@@ -11,7 +11,7 @@ import Searcher from "./components/atoms/Searcher";
 
 //Iconos
 import CardIcon from "./components/atoms/address-card-solid.svg";
-import Lupa from "./components/atoms/lupa.svg";
+//import Lupa from "./components/atoms/lupa.svg";
 import FacebookIcon from "./components/atoms/facebook-square.svg";
 
 function App() {
