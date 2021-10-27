@@ -1,5 +1,11 @@
 import React from 'react'
 
+import styled from 'styled-components'
+
+const ButtonStyled = styled.button`
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+`
+
 const  Button = ({type, children, onClick, size, ...props}) => {
 
     let typeInterno, sizeInterno   
@@ -65,14 +71,14 @@ const  Button = ({type, children, onClick, size, ...props}) => {
     }
 
     return (
-        <button 
+        <ButtonStyled 
             className={`${estiloBotonBasico} ${typeInterno} ${sizeInterno}`} 
             {...props}
         >
             <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-48 group-hover:h-48 opacity-10"></span>
             <span className="relative">{children}</span>  
 
-        </button>
+        </ButtonStyled>
     )
 }
 

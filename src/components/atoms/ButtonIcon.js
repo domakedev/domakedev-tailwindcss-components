@@ -2,6 +2,12 @@ import React from "react";
 
 import Icon from "./facebook-square.svg";
 
+import styled from 'styled-components'
+
+const ButtonStyled = styled.button`
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+`
+
 const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
   let sizeInterno, iconStyle
 
@@ -35,7 +41,7 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
   }
 
   return (
-    <button
+    <ButtonStyled
       className={`${estiloBotonBasico} ${sizeInterno}`}
       {...props}
     >
@@ -45,7 +51,7 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
       
 
       <span className={`relative ${children?"ml-2":""}`}>{children}</span>
-    </button>
+    </ButtonStyled>
   );
 };
 

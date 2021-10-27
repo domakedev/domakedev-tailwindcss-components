@@ -10,6 +10,8 @@ const Input = ({ icon, placeholder, type, name, id }) => {
         placeholder-gray-400
         border border-gray-600 rounded
         focus:outline-none focus:ring-1 focus:ring-gray-600
+        font-Primary
+
         `;
 
   let InputStyled = {};
