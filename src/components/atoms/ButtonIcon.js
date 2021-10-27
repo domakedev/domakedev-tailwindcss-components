@@ -3,7 +3,7 @@ import React from "react";
 import Icon from "./facebook-square.svg";
 
 const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
-  let typeInterno, sizeInterno, iconStyle
+  let sizeInterno, iconStyle
 
   let estiloBotonBasico = ` 
      relative 
@@ -33,7 +33,7 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
   }
 
   return (
-    <buttonIcon
+    <button
       className={`${estiloBotonBasico} ${sizeInterno}`}
       {...props}
     >
@@ -42,7 +42,7 @@ const ButtonIcon = ({ icon, children, onClick, size, ...props }) => {
       <img src={icon} className={`${iconStyle}`} alt="" />
 
       <span className="relative ml-2">{children}</span>
-    </buttonIcon>
+    </button>
   );
 };
 

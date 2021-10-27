@@ -10,9 +10,6 @@ import ButtonIcon from "./components/atoms/ButtonIcon";
 import CardIcon from "./components/atoms/address-card-solid.svg";
 
 
-import {BeakerIcon } from '@heroicons/react/solid'
-
-
 function App() {
   return (
     <div className="">
