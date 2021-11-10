@@ -8,6 +8,7 @@ import Logo from "./components/atoms/Logo";
 import ProfilePhoto from "./components/atoms/ProfilePhoto";
 import ButtonIcon from "./components/atoms/ButtonIcon";
 import Searcher from "./components/atoms/Searcher";
+import Card from "./components/atoms/Card";
 
 //Iconos
 import CardIcon from "./components/atoms/address-card-solid.svg";
@@ -78,13 +79,33 @@ function App() {
       <Tittle>Foto de perfil</Tittle>
       <div className="flex flex-col lg:flex-row items-center justify-around space-y-8">
         <div className="flex flex-col items-center space-y-4">
-          <ProfilePhoto type="circular" size="small" borderColor="border-gray-700"></ProfilePhoto>
-          <ProfilePhoto type="circular" size="medium" borderColor="border-blue-400"></ProfilePhoto>
-          <ProfilePhoto type="circular" size="big" borderColor="border-red-400"></ProfilePhoto>
+          <ProfilePhoto
+            type="circular"
+            size="small"
+            borderColor="border-gray-700"
+          ></ProfilePhoto>
+          <ProfilePhoto
+            type="circular"
+            size="medium"
+            borderColor="border-blue-400"
+          ></ProfilePhoto>
+          <ProfilePhoto
+            type="circular"
+            size="big"
+            borderColor="border-red-400"
+          ></ProfilePhoto>
         </div>
         <div className="flex flex-col items-center space-y-4">
-          <ProfilePhoto type="cuadrado" size="small" borderColor="border-gray-700"></ProfilePhoto>
-          <ProfilePhoto type="cuadrado" size="medium" borderColor="border-blue-400"></ProfilePhoto>
+          <ProfilePhoto
+            type="cuadrado"
+            size="small"
+            borderColor="border-gray-700"
+          ></ProfilePhoto>
+          <ProfilePhoto
+            type="cuadrado"
+            size="medium"
+            borderColor="border-blue-400"
+          ></ProfilePhoto>
           <ProfilePhoto
             type="cuadrado"
             size="big"
@@ -92,6 +113,14 @@ function App() {
           ></ProfilePhoto>
         </div>
       </div>
+
+      <Tittle>Card</Tittle>
+      <Card type="column">
+          <Card.Logo className=""></Card.Logo>
+          <Card.Body align="text-center" className="bg-gray-400">
+            Hijioo
+          </Card.Body>
+      </Card>
     </div>
   );
 }

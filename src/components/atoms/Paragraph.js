@@ -1,6 +1,6 @@
 import React from "react";
 
-const Paragraph = ({ children, align }) => {
+const Paragraph = ({ children, align, className }) => {
   let defaultStyles = `
     ${align}      
     text-xl
@@ -10,7 +10,8 @@ const Paragraph = ({ children, align }) => {
     px-5
     `;
 
-  return <p className={`${defaultStyles}`}>{children}</p>;
+
+  return <p className={` ${defaultStyles} ${className}`}>{children}</p>;
 };
 
 export default Paragraph;

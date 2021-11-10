@@ -2,7 +2,7 @@ import React from 'react'
 
 import LogoImg from './googlelogo.jpg'
 
-const Logo = ({size, logo, ...props}) => {
+const Logo = ({size, logo, className, ...props}) => {
 
     let defaultStyles = `
     inline-block
@@ -24,7 +24,7 @@ const Logo = ({size, logo, ...props}) => {
     return (
         <img
         alt="Logo"
-        className={`${defaultStyles} ${sizeInterno}`}
+        className={`${defaultStyles} ${sizeInterno} ${className}`}
         src={`${logo}`}
         {...props}
         >
